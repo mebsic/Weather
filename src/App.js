@@ -53,7 +53,7 @@ export default function App() {
           <div className="col-md-auto">
             <h3 className="text-primary" style={{ textDecoration: 'none' }}><i className="glyphicon glyphicon-cloud"></i>  Weather forecast</h3>
             <div className="input-group">
-              <input type="text" ref={input} className="form-control" placeholder="Enter a location..." autoComplete='off' />
+              <input type="text" ref={input} className="form-control" placeholder="Enter a city..." autoComplete='off' />
               <span className="input-group-btn">
                 <input type="submit" className="btn btn-primary" value="Search" />
               </span>
