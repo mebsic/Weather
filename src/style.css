@@ -1,0 +1,51 @@
+.container {
+    padding: 0px 280px 0px 280px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.pageNumbers {
+    display: flex;
+    list-style: none;
+    align-items: left;
+    justify-content: left;
+    padding: 0px 0px 0px 0px;
+}
+
+.pageNumbers li {
+    padding: 1rem;
+    color: rgb(150, 150, 150);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pageNumbers li.active {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.loadmore {
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        padding: 0px 40px 0px 40px;
+    }
+
+    .navigation {
+        visibility: hidden;
+        display: none;
+    }
+
+    p {
+        font-size: 13px;
+    }
+}
