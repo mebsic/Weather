@@ -91,7 +91,9 @@ function Weather(props) {
                                 <AccordionDetails>
                                     <Typography style={{ fontSize: "15px" }}>
                                         <b>Expect weather from </b>{data.main.temp_min}&deg;C <b> to </b>{data.main.temp_max}&deg;C<br />
-                                        <b>Clouds: </b>{data.weather[0].description} <b>Humidity: </b>{data.main.humidity}% <b>Pressure: </b>{data.main.pressure} hPa<br />
+                                        <b>Clouds: </b>{data.weather[0].description}<br />
+                                        <b>Humidity: </b>{data.main.humidity}%<br />
+                                        <b>Pressure: </b>{data.main.pressure} hPa<br />
                                         <b>Wind Speed: </b>{data.wind.speed} m/s<br />
                                         <b>Geo Location: </b>{data.coord.lat}, {data.coord.lon}<br />
                                         <b>Last Updated: </b>{moment.unix(data.dt).format("MM/DD/YYYY, hh:mm A")}<br />
